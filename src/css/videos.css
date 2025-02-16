@@ -1,0 +1,68 @@
+/* Nueva implementación del grid de proyectos */
+.projects {
+    padding: 1rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    font-size: 2.9em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mantenemos 3 columnas */
+    gap: 2rem; /* Espacio entre tarjetas */
+    padding: 0 40px;
+    max-width: 1900px; /* Aumentado el ancho máximo */
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; /* Aumentado para mantener proporción */
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem; /* Aumentado para más espacio interno */
+}
+
+.project-info h3 {
+    color: #4b4c4d;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p{
+    color: rgb(114, 114, 114);
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+}

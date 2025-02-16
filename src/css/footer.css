@@ -1,0 +1,132 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+:root{
+    --youtube:#ff0000;
+    --insta: #d62976;
+    --discord: #7289da;
+    --tiktok: rgb(196, 143, 245);
+    --black: #000000;
+}
+/*Footer - pie de pagina*/ 
+.container-footer{ 
+    width: 100%; 
+    padding: 40px 0; 
+    background: #fff; 
+    margin-top: 40px; 
+} 
+
+.container-footer footer{ 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+
+.container-footer footer .logo-footer{ 
+    text-align: center; 
+} 
+
+.container-footer footer .logo-footer img{ 
+    width: 100px; 
+} 
+
+.container-footer footer .redes-footer{ 
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+} 
+
+.container-footer footer .redes-footer .icon-redes-footer{ 
+    font-size: 20px; 
+    margin: 20px; 
+    background: #efefef; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 100%; 
+    color: #a2a2a2; 
+}  
+
+.container-footer footer hr{ 
+    margin-top: 20px; 
+    border: none; 
+    height: 2px; 
+    background: #c0c0c07a; 
+} 
+
+.container-footer h4{ 
+    text-align: center; 
+    margin-top: 40px; 
+    color: #8e8e8e; 
+    font-weight: 500; 
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center; /* Alinea los iconos al centro */
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.icon{
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+}
+
+.icon1:hover{
+    background: var(--youtube);
+    color: #ffffff;
+    box-shadow: 0 0 5px var(--youtube),
+      0 0 25px var(--youtube),
+      0 0 50px var(--youtube),
+      0 0 200px var(--youtube);
+}
+
+.icon2:hover{
+    background: var(--discord);
+    color: #ffffff;
+    box-shadow: 0 0 5px var(--discord),
+      0 0 25px var(--discord),
+      0 0 50px var(--discord),
+      0 0 200px var(--discord);
+}
+
+.icon3:hover{
+    background: var(--tiktok);
+    color: #ffffff;
+    box-shadow: 0 0 5px var(--tiktok),
+      0 0 25px var(--tiktok),
+      0 0 50px var(--tiktok),
+      0 0 200px var(--tiktok);
+}
+
+.icon4:hover{
+    background: var(--insta);
+    color: #ffffff;
+    box-shadow: 0 0 5px var(--insta),
+      0 0 25px var(--insta),
+      0 0 50px var(--insta),
+      0 0 200px var(--insta);
+}
+/*
+.icon:hover{
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color),
+      0 0 25px var(--color),
+      0 0 50px var(--color),
+      0 0 200px var(--color);
+}
+
+*/
